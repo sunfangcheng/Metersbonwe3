@@ -1,0 +1,85 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+    <!--页面的顶部栏-->
+    <declare-styleable name="TopBar">
+        <attr name="tb_leftType" format="enum">
+            <enum name="gone" value="0" />
+            <enum name="img" value="1" />
+            <enum name="text" value="2" />
+            <enum name="circleImage" value="3" />
+        </attr>
+        <attr name="tb_leftImage" format="reference" />
+        <attr name="tb_leftText" format="reference|string" />
+        <attr name="tb_leftTextSize" format="reference|dimension" />
+        <attr name="tb_leftTextColor" format="reference|color" />
+        <!--只能设置左边的文字左内边距-->
+        <attr name="tb_leftPadding" format="reference|dimension" />
+        <!--是否增加默认的返回功能-->
+        <attr name="tb_leftAddDefaultClick" format="boolean" />
+        <attr name="tb_isLeftBtnShow" format="boolean" />
+        <attr name="tb_isRightBtnShow" format="boolean" />
+        <attr name="tb_middleType" format="enum">
+            <enum name="gone" value="0" />
+            <enum name="edit" value="1" />
+            <enum name="text" value="2" />
+            <enum name="img" value="3" />
+        </attr>
+        <attr name="tb_middleTextGravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="center" value="17" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="tb_middleText" format="reference|string" />
+        <attr name="tb_middleEditHint" format="reference|string" />
+        <attr name="tb_middleTextSize" format="reference|dimension" />
+        <attr name="tb_middleTextColor" format="reference|color" />
+        <attr name="tb_middleTextBold" format="boolean" />
+        <attr name="tb_middleImage" format="reference" />
+
+        <attr name="tb_rightType" format="enum">
+            <enum name="gone" value="0" />
+            <enum name="img" value="1" />
+            <enum name="text" value="2" />
+        </attr>
+        <attr name="tb_rightImage" format="reference" />
+        <!--第二个右边的图标-->
+        <attr name="tb_rightImage2" format="reference" />
+        <attr name="tb_rightText" format="reference|string" />
+        <attr name="tb_rightTextSize" format="reference|dimension" />
+        <attr name="tb_rightTextColor" format="reference|color" />
+        <!--只能设置右边的文字右内边距-->
+        <attr name="tb_rightPadding" format="reference|dimension" />
+
+        <attr name="tb_showBottomLine" format="boolean" />
+        <!--当Toolbar和Collapsing配合时，要固定里面的自定义View的高度-->
+        <attr name="tb_customHeight" format="reference|dimension" />
+    </declare-styleable>
+
+    <!--圆形图片-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <!--带竖的分割线-->
+    <declare-styleable name="TabLayoutVerticalLine">
+        <attr name="vertical_line" format="reference" />
+        <attr name="vertical_line_padding" format="reference|dimension" />
+    </declare-styleable>
+
+</resources>
